@@ -9,6 +9,7 @@ import useStyles from 'isomorphic-style-loader/useStyles'
 
 
 const Home = (props) => {
+
     useStyles(style);
 
 
@@ -18,6 +19,7 @@ const Home = (props) => {
     useEffect(() => {
         dispatch(getHomeList())
     }, []);
+
 
     //server side render css
     // props.staticContext && (props.staticContext.CSS = style._getCss())
@@ -37,7 +39,7 @@ const Home = (props) => {
             <ul>
                 {Array.isArray(newsList) && newsList.map(news => {
                     return (
-                        <li key={news.start}>{news.start}</li>
+                        <li key={news.id}>{news.title}</li>
                     )
                 })}
             </ul>

@@ -9,13 +9,14 @@ import Home from 'container/Home';
 import {
     render
 } from './util';
-
 const app = express();
 
+//https://jsonplaceholder.typicode.com/posts
 //req.url匹配的是/mock  后面的路径
-app.use('/mock', proxy('', {
+app.use('/posts', proxy('https://jsonplaceholder.typicode.com/', {
+
     proxyReqPathResolver: function (req) {
-        return '/mock' + req.url
+        return '/posts'
     }
 }));
 

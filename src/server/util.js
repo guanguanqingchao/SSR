@@ -71,7 +71,7 @@ export const render = (req, res, context) => {
         res.send(`
             <html>
             <head>
-                <title>SSR</title>
+                <title>guaniqinghxoa</title>
                 <style>${[...css].join('')}</style>
             </head>
             <body>

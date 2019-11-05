@@ -18,8 +18,8 @@ export const getHomeList = () => {
     //服务器  mock……     ==》    服务器根目录[SSR]/mock    找不到
     return (dispatch, getState, axiosInstance) => {
         //return Promise
-        return axiosInstance.get('/mock/362/tianji-api/v1/driverIncome/diag/listen-mode').then((res) => {
-            dispatch(changeList(res.data.data.online_timeline.detail))
+        return axiosInstance.get('/posts').then((res) => {
+            dispatch(changeList(res.data))
         })
     }
 }
