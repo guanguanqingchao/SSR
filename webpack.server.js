@@ -21,11 +21,6 @@ const serverWebpack = {
                     'isomorphic-style-loader',
                     {
                         loader: 'css-loader',
-                        options: {
-                            importLoader: 1,
-                            modules: true,
-                            localIdentName: '[name]_[local]_[hash:base64:5]'
-                        }
                     },
                 ]
             }

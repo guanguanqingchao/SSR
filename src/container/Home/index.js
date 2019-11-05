@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import Header from 'components/Header';
 import { connect, useSelector, useDispatch, useStore, } from 'react-redux';
+import { Helmet } from "react-helmet";
 import { getHomeList } from './store/action';
 
 import style from './style.css'
@@ -19,13 +20,17 @@ const Home = (props) => {
     }, []);
 
     //server side render css
-    console.log('===style', style)
     // props.staticContext && (props.staticContext.CSS = style._getCss())
 
 
     return (
         <Fragment>
             <Header />
+            <Helmet>
+                <title>SRR-Home</title>
+                <meta name='description' content='this is a home Component' />
+
+            </Helmet>
             <div > Hello  </div>
             <button onClick={() => console.log('test')}>点击</button>
             <h5 className='test'>list</h5>

@@ -86,25 +86,25 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./src/components/header.css":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/components/header.css ***!
-  \***********************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/header.css":
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/header.css ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".test1 {\\n    font-size: 30px;\\n    color: purple;\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/components/header.css?./node_modules/css-loader/dist/cjs.js??ref--4-1");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".test1 {\\n    font-size: 30px;\\n    color: purple;\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/components/header.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./src/container/Home/style.css":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/container/Home/style.css ***!
-  \**************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/container/Home/style.css":
+/*!****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/container/Home/style.css ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body {\\n    background: green;\\n}\\n\\n.test {\\n    margin-top: 50px;\\n    background: red\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/container/Home/style.css?./node_modules/css-loader/dist/cjs.js??ref--4-1");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body {\\n    background: green;\\n}\\n\\n.test {\\n    margin-top: 50px;\\n    background: red\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/container/Home/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -175,7 +175,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\n    var refs = 0;\n    var css = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--4-1!./header.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/components/header.css\");\n    var insertCss = __webpack_require__(/*! ../../node_modules/isomorphic-style-loader/insertCss.js */ \"./node_modules/isomorphic-style-loader/insertCss.js\");\n    var content = typeof css === 'string' ? [[module.i, css, '']] : css;\n\n    exports = module.exports = css.locals || {};\n    exports._getContent = function() { return content; };\n    exports._getCss = function() { return '' + css; };\n    exports._insertCss = function(options) { return insertCss(content, options) };\n\n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if (false) { var removeCss; }\n  \n\n//# sourceURL=webpack:///./src/components/header.css?");
+eval("\n    var refs = 0;\n    var css = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./header.css */ \"./node_modules/css-loader/dist/cjs.js!./src/components/header.css\");\n    var insertCss = __webpack_require__(/*! ../../node_modules/isomorphic-style-loader/insertCss.js */ \"./node_modules/isomorphic-style-loader/insertCss.js\");\n    var content = typeof css === 'string' ? [[module.i, css, '']] : css;\n\n    exports = module.exports = css.locals || {};\n    exports._getContent = function() { return content; };\n    exports._getCss = function() { return '' + css; };\n    exports._insertCss = function(options) { return insertCss(content, options) };\n\n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if (false) { var removeCss; }\n  \n\n//# sourceURL=webpack:///./src/components/header.css?");
 
 /***/ }),
 
@@ -187,7 +187,7 @@ eval("\n    var refs = 0;\n    var css = __webpack_require__(/*! !../../node_mod
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Header = __webpack_require__(/*! components/Header */ \"./src/components/Header.js\");\n\nvar _Header2 = _interopRequireDefault(_Header);\n\nvar _reactRedux = __webpack_require__(/*! react-redux */ \"react-redux\");\n\nvar _action = __webpack_require__(/*! ./store/action */ \"./src/container/Home/store/action.js\");\n\nvar _style = __webpack_require__(/*! ./style.css */ \"./src/container/Home/style.css\");\n\nvar _style2 = _interopRequireDefault(_style);\n\nvar _useStyles = __webpack_require__(/*! isomorphic-style-loader/useStyles */ \"isomorphic-style-loader/useStyles\");\n\nvar _useStyles2 = _interopRequireDefault(_useStyles);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Home = function Home(props) {\n    (0, _useStyles2.default)(_style2.default);\n\n    var newsList = (0, _reactRedux.useSelector)(function (state) {\n        return state.home.newsList;\n    }); //react-redux7+版本 hook 获取state\n    var dispatch = (0, _reactRedux.useDispatch)();\n\n    (0, _react.useEffect)(function () {\n        dispatch((0, _action.getHomeList)());\n    }, []);\n\n    //server side render css\n    console.log('===style', _style2.default);\n    // props.staticContext && (props.staticContext.CSS = style._getCss())\n\n\n    return _react2.default.createElement(\n        _react.Fragment,\n        null,\n        _react2.default.createElement(_Header2.default, null),\n        _react2.default.createElement(\n            'div',\n            null,\n            ' Hello  '\n        ),\n        _react2.default.createElement(\n            'button',\n            { onClick: function onClick() {\n                    return console.log('test');\n                } },\n            '\\u70B9\\u51FB'\n        ),\n        _react2.default.createElement(\n            'h5',\n            { className: 'test' },\n            'list'\n        ),\n        _react2.default.createElement(\n            'ul',\n            null,\n            Array.isArray(newsList) && newsList.map(function (news) {\n                return _react2.default.createElement(\n                    'li',\n                    { key: news.start },\n                    news.start\n                );\n            })\n        )\n    );\n};\nexports.default = Home;\n\n//# sourceURL=webpack:///./src/container/Home/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Header = __webpack_require__(/*! components/Header */ \"./src/components/Header.js\");\n\nvar _Header2 = _interopRequireDefault(_Header);\n\nvar _reactRedux = __webpack_require__(/*! react-redux */ \"react-redux\");\n\nvar _reactHelmet = __webpack_require__(/*! react-helmet */ \"react-helmet\");\n\nvar _action = __webpack_require__(/*! ./store/action */ \"./src/container/Home/store/action.js\");\n\nvar _style = __webpack_require__(/*! ./style.css */ \"./src/container/Home/style.css\");\n\nvar _style2 = _interopRequireDefault(_style);\n\nvar _useStyles = __webpack_require__(/*! isomorphic-style-loader/useStyles */ \"isomorphic-style-loader/useStyles\");\n\nvar _useStyles2 = _interopRequireDefault(_useStyles);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Home = function Home(props) {\n    (0, _useStyles2.default)(_style2.default);\n\n    var newsList = (0, _reactRedux.useSelector)(function (state) {\n        return state.home.newsList;\n    }); //react-redux7+版本 hook 获取state\n    var dispatch = (0, _reactRedux.useDispatch)();\n\n    (0, _react.useEffect)(function () {\n        dispatch((0, _action.getHomeList)());\n    }, []);\n\n    //server side render css\n    // props.staticContext && (props.staticContext.CSS = style._getCss())\n\n\n    return _react2.default.createElement(\n        _react.Fragment,\n        null,\n        _react2.default.createElement(_Header2.default, null),\n        _react2.default.createElement(\n            _reactHelmet.Helmet,\n            null,\n            _react2.default.createElement(\n                'title',\n                null,\n                'SRR-Home'\n            ),\n            _react2.default.createElement('meta', { name: 'description', content: 'this is a home Component' })\n        ),\n        _react2.default.createElement(\n            'div',\n            null,\n            ' Hello  '\n        ),\n        _react2.default.createElement(\n            'button',\n            { onClick: function onClick() {\n                    return console.log('test');\n                } },\n            '\\u70B9\\u51FB'\n        ),\n        _react2.default.createElement(\n            'h5',\n            { className: 'test' },\n            'list'\n        ),\n        _react2.default.createElement(\n            'ul',\n            null,\n            Array.isArray(newsList) && newsList.map(function (news) {\n                return _react2.default.createElement(\n                    'li',\n                    { key: news.start },\n                    news.start\n                );\n            })\n        )\n    );\n};\nexports.default = Home;\n\n//# sourceURL=webpack:///./src/container/Home/index.js?");
 
 /***/ }),
 
@@ -246,7 +246,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\n    var refs = 0;\n    var css = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--4-1!./style.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/container/Home/style.css\");\n    var insertCss = __webpack_require__(/*! ../../../node_modules/isomorphic-style-loader/insertCss.js */ \"./node_modules/isomorphic-style-loader/insertCss.js\");\n    var content = typeof css === 'string' ? [[module.i, css, '']] : css;\n\n    exports = module.exports = css.locals || {};\n    exports._getContent = function() { return content; };\n    exports._getCss = function() { return '' + css; };\n    exports._insertCss = function(options) { return insertCss(content, options) };\n\n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if (false) { var removeCss; }\n  \n\n//# sourceURL=webpack:///./src/container/Home/style.css?");
+eval("\n    var refs = 0;\n    var css = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/container/Home/style.css\");\n    var insertCss = __webpack_require__(/*! ../../../node_modules/isomorphic-style-loader/insertCss.js */ \"./node_modules/isomorphic-style-loader/insertCss.js\");\n    var content = typeof css === 'string' ? [[module.i, css, '']] : css;\n\n    exports = module.exports = css.locals || {};\n    exports._getContent = function() { return content; };\n    exports._getCss = function() { return '' + css; };\n    exports._insertCss = function(options) { return insertCss(content, options) };\n\n    // Hot Module Replacement\n    // https://webpack.github.io/docs/hot-module-replacement\n    // Only activated in browser context\n    if (false) { var removeCss; }\n  \n\n//# sourceURL=webpack:///./src/container/Home/style.css?");
 
 /***/ }),
 
@@ -408,6 +408,17 @@ eval("module.exports = require(\"react\");\n\n//# sourceURL=webpack:///external_
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"react-dom/server\");\n\n//# sourceURL=webpack:///external_%22react-dom/server%22?");
+
+/***/ }),
+
+/***/ "react-helmet":
+/*!*******************************!*\
+  !*** external "react-helmet" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"react-helmet\");\n\n//# sourceURL=webpack:///external_%22react-helmet%22?");
 
 /***/ }),
 
