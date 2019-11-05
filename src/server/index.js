@@ -16,8 +16,6 @@ const app = express();
 //req.url匹配的是/mock  后面的路径
 app.use('/mock', proxy('http://di-mock.xiaojukeji.com', {
     proxyReqPathResolver: function (req) {
-        console.log('==========', req.url)
-
         return '/mock' + req.url
     }
 }));

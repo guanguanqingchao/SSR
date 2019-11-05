@@ -1,0 +1,8 @@
+# FILE
+.DS_Store
+yarn-*
+npm-*
+/dev
+# FOLDER
+/node_modules/
+output

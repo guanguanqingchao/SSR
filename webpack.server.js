@@ -12,5 +12,25 @@ const serverWebpack = {
         path: path.resolve(__dirname, 'build')
     },
     externals: [nodeExternals()], //在服务端打包的时候忽略node_modules下的依赖
+
+
+    module: {
+        rules: [{
+                test: /\.css$/,
+                use: [
+                    'isomorphic-style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoader: 1,
+                            modules: true,
+                            localIdentName: '[name]_[local]_[hash:base64:5]'
+                        }
+                    },
+                ]
+            }
+
+        ]
+    }
 }
 module.exports = merge(serverWebpack, base)

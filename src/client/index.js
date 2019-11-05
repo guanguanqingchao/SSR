@@ -7,16 +7,27 @@ import routes from 'src/Router.js';
 import { getClientStore } from 'store';
 import { Provider } from 'react-redux';
 
+import StyleContext from 'isomorphic-style-loader/StyleContext'
+const insertCss = (...styles) => {
+    const removeCss = styles.map(style => style._insertCss && style._insertCss())
+    return () => removeCss.forEach(dispose => dispose())
+}
+
+
+
 const store = getClientStore()
 const App = () => {
     return (
         <Provider store={store}>
             <BrowserRouter>
-                <div>
-                    {routes.map(route => (
-                        <Route {...route} />
-                    ))}
-                </div>
+                <StyleContext.Provider value={{ insertCss }}>
+                    <div>
+                        {routes.map(route => (
+                            <Route {...route} />
+                        ))}
+                    </div>
+                </StyleContext.Provider>
+
             </BrowserRouter>
         </Provider>
     )
