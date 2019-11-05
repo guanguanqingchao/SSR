@@ -12,9 +12,8 @@ import {
 
 const app = express();
 
-//http://di-mock.xiaojukeji.com/mock/362/tianji-api/v1/driverIncome/diag/listen-mode
 //req.url匹配的是/mock  后面的路径
-app.use('/mock', proxy('http://di-mock.xiaojukeji.com', {
+app.use('/mock', proxy('', {
     proxyReqPathResolver: function (req) {
         return '/mock' + req.url
     }
